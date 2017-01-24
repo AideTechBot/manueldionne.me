@@ -1,7 +1,32 @@
+body {
+	background-color: #D9D9D9;
+}
+
 .row {
-	background-color:lavender;
-	padding:10px;
-	box-shadow: 3px 3px 6px #BBBBBB;
+	padding:5px 10px 5px 10px;
+	box-shadow: 4px 4px 6px #BBBBBB;
+}
+
+.header-row {
+	background-color:#1D2731;
+	color: #FFFFFF;
+	display: table;
+	margin: 0 auto;
+}
+
+.content-title {
+	position: relative;
+}
+
+.timestamp {
+	font-size: 16px;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+.content-row {
+	background-color:#FFFFFF;
 }
 
 .col-sm-6 {
