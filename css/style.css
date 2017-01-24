@@ -80,3 +80,8 @@ body {
 	padding-top:10px !important;
 	padding-bottom:10px !important;
 }
+
+.courier {
+	font-family: 'Courier New';
+	font-weight: bold;
+}
