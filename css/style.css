@@ -18,6 +18,23 @@ body {
     height:100%;
 }
 
+.static-img {
+	width: 256px;
+    min-height: 256px;
+    float: left;
+    margin: 5px;
+    margin-right: 5px;
+}
+@media (max-width:400px) {
+  .static-img {
+  	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  	width: 256px;
+  	margin: 10px;
+  }
+}
+
 .header-row {
 	background-color:#1D2731;
 	color: #FFFFFF;
