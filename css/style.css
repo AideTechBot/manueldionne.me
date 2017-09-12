@@ -1,0 +1,87 @@
+
+body {
+	background-color: #D9D9D9;
+}
+
+
+.name-title {
+	font-family: 'Raleway', sans-serif;
+}
+
+.row {
+	padding:5px 10px 5px 10px;
+	box-shadow: 4px 4px 6px #BBBBBB;
+}
+
+.item {
+	position: relative;
+    height:100%;
+}
+
+.static-img {
+	width: 256px;
+    min-height: 256px;
+    float: left;
+    margin: 5px;
+    margin-right: 5px;
+}
+@media (max-width:400px) {
+  .static-img {
+  	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  	width: 256px;
+  	margin: 10px;
+  }
+}
+
+.header-row {
+	background-color:#1D2731;
+	color: #FFFFFF;
+	display: table;
+	margin: 0 auto;
+}
+
+.carousel {
+	width: 256px;
+    min-height: 256px;
+    max-height: auto;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+@media (max-width:400px) {
+  .carousel {
+  	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  	width: 256px;
+  	margin: 10px;
+  }
+}
+
+
+.content-title {
+	position: relative;
+}
+
+.timestamp {
+	font-size: 16px;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+.content-row {
+	background-color:#FFFFFF;
+}
+
+.col-sm-6 {
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+
+.courier {
+	font-family: 'Courier New';
+	font-weight: bold;
+}
