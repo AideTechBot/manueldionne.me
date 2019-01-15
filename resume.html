@@ -28,7 +28,6 @@
       #header{
       width:100%;
       text-align: left;
-      border-bottom:solid 1px #000;
       }
       a:link, a:visited{
       color: #666;
@@ -62,11 +61,13 @@
       }
       h2{
       font-family: 'Open Sans', sans-serif;
-      margin-top:0.6em;
+      margin-top:0.1em;
       margin-bottom:0.4em;
       font-weight: 300;
       font-size:13pt;
       color: #666;
+      padding-bottom:0.25em;
+      border-bottom:solid 1px #AAA;
       }
       ul{
       margin-top:1pt;
@@ -87,13 +88,13 @@
       font-family: 'Open Sans', sans-serif;
       float:right;
       font-size: 10pt;
-      color:#878787;
+      color:#666;
       }
       #section_activities{
       /*page-break-before: always;*/
       }
       .section_sub{
-      margin-bottom:10px;
+      margin-bottom:0px;
       }
       .activity_header {
       font-family: 'Open Sans', sans-serif;
@@ -108,6 +109,11 @@
       .activity_header_sub {
       font-size: 10pt;
       }
+      .activity_header_tag {
+      font-size: 9.5pt;
+      font-weight:600;
+      font-style:oblique;
+      }
       .header-left {
       width: 60%;
       float:left;
@@ -119,6 +125,11 @@
       }
       .header-links a:hover, .header-links a:focus, .header-links a:active, .header-links a:visited, .header-links a:link {
       text-decoration: none;
+      color:#2B60DE;
+      }
+      a.activity_link:link, a.activity_link:visited {
+      text-decoration: none !important;
+      color:#2B60DE !important;
       }
       .small-caps {
       font-variant: small-caps;
@@ -129,7 +140,7 @@
     <div id="containter">
       <div id="header">
         <div class="header-left">
-          <h1>MANUEL DIONNE</h1>
+          <h1>Manuel Dionne</h1>
           <span class="activity_header_sub">Software Engineering Class of 2021 - University of Waterloo</span><br>
           <span class="activity_header_sub">Bilingual FR/EN - Dual Citizen CA/USA</span><br>
         </div>
@@ -148,71 +159,121 @@
           <h2>Skills Summary</h2>
           <div class="section_sub">
             <ul>
-              <li><em>Languages</em>: C++, Java, Scala, Python, VHDL, Assembly (M68K/ColdFire)</li>
-              <li><em>Datastores</em>: Bigtable, Hadoop, Cassandra, Titan, Riak, MongoDB, MySQL</li>
-              <li>Experienced with distributed systems, MapReduce, and multi-threading</li>
-              <li>Passionate for engineering, distributed scalable systems, search, and machine learning</li>
+              <li><em>Languages</em>: C++, C#, C, JavaScript, Python, PHP,  HTML & CSS</li>
+              <li><em>Tools</em>: Vim, MySQL, Git, Bash, Visual Studio, Node.js, React, WPF & XAML, MongoDB</li>
+              <li>Experienced in Windows app development and full stack web development.</li>
+              <li>Interested in low-level, embedded development and graphics programming</li>
             </ul>
           </div>
         </div>
         <div class="section">
           <h2>Work Experience</h2>
           <div class="section_sub">
-            <span class="activity_header"><strong>Google</strong></span> <span class="location">Mountain View, CA</span><br>
-            <span class="activity_header activity_header_sub">Senior Software Engineer (Search Infrastructure)</span> <span class="date">August 2014 – Present</span>
+            <span class="activity_header"><strong>Focal Healthcare</strong></span> <span class="location">Toronto, ON</span><br>
+            <span class="activity_header activity_header_sub">Software Developer Intern</span> <span class="date">September – December 2018</span>
             <ul>
-              <li>Analyze and optimize Google's large-scale latency-sensitive C++ distributed search system</li>
-              <li>Optimize I/O and memory management to improve latency and reduce costs</li>
-              <li>Work with hardware platforms teams to develop servers that Search can utilize fully</li>
+              <li>Designed and created a software subsystem to emulate ultrasound hardware to massively speed up "on the fly" debugging and overall development. This was done with C#, WPF, and XAML.</li>
+              <li>Helped maintain and design parts of FDA approved software running on medical biopsy devices.</li>
+              <li>Worked with multidisciplinary professionals to implement bug fixes and feedback from doctors.</li>
             </ul>
           </div>
           <div class="section_sub">
-            <span class="activity_header"><strong>Twitter</strong></span> <span class="location">San Francisco, CA</span><br>
-            <span class="activity_header activity_header_sub">Software Engineering Intern (Data Infrastructure)</span> <span class="date">August – December 2013</span>
+            <span class="activity_header"><strong>ConsenSys</strong></span> <span class="location">Waterloo, ON</span><br>
+            <span class="activity_header activity_header_sub">Software Developer Intern (Full-Stack)</span> <span class="date">January – May 2018</span>
             <ul>
-              <li>Worked on decreasing the effort required to create experimental features</li>
-              <li>Developed libraries and tools in Scala to compose data sources across RPC services</li>
+              <li>Helped design and build a decentralized management web app in React, altJs and Express.js.</li>
+              <li>Did front-end/back-end work and was involved in facilitating the first releases to a user-base of
+              700+ people. All while continuously implementing customer feedback and bug reports.</li>
+              <li>Helped build an interface for a graph database (Neo4j) to represent and store relationships
+              between users, roles and teams within a non-hierarchical organization.</li>
             </ul>
           </div>
           <div class="section_sub">
-            <span class="activity_header"><strong>Stealth Startup</strong></span> <span class="location">Waterloo, ON</span><br>
-            <span class="activity_header activity_header_sub">Software Engineering Intern</span> <span class="date">August – December 2012</span>
+            <span class="activity_header"><strong>Finastra (D+H)</strong></span> <span class="location">Mississauga, ON</span><br>
+            <span class="activity_header activity_header_sub">Software Developer Intern</span> <span class="date">May – September 2017</span>
             <ul>
-              <li>Designed and built a distributed in-memory content-based image retrieval system in C++</li>
-              <li>Created a C++ environment for distributed computer vision development on EC2</li>
-              <li>Constructed a distributed image feature extraction and indexing system on top of Hadoop in C++</li>
+              <li>Created command line tools for automation of XML file generation and processing using C#.</li>
+              <li>Automated the verification of data sent through a RESTful API by checking what is displayed
+              on the UI against an SQL database using Selenium for unit testing.</li>
+              <li>Cut down regression testing process from <strong>3 days to 3 hours</strong> using Powershell scripts.</li>
             </ul>
-          </div>
-          <div class="section_sub">
-            <span class="activity_header"><strong>Google</strong></span> <span class="location">Mountain View, CA</span><br>
-            <span class="activity_header activity_header_sub">Software Engineering Intern</span> <span class="date">January – April 2012</span>
-            <ul>
-              <li>Built a content-based large scale distributed image and video search system in C++</li>
-              <li>Developed baseline content-based image clustering systems for organizing search results</li>
-              <li>Helped with the system integration for the WWW 2012 paper "<a href="http://www2012.org/proceedings/companion/p539.pdf">Google Image Swirl</a>"</li>
-            </ul>
-          </div>
-          <div class="section_sub">
-            <span class="activity_header"><strong>Datalot</strong></span> <span class="location">Brooklyn, NY</span><br>
-            <span class="activity_header activity_header_sub">Software Engineering Intern</span> <span class="date">May – August 2011</span>
-            <ul>
-              <li>Used machine learning to predict value of consumer leads in a live marketplace</li>
-              <li>Designed and built a distributed genetic learning system using Python and ZeroMQ</li>
-            </ul>
-          </div>
-          <div class="section_sub">
-            <span class="activity_header"><strong>Tagged</strong></span> <span class="location">San Francisco, CA</span><br>
-            <span class="activity_header activity_header_sub">Software Developer (Infrastructure)</span> <span class="date">September – December 2011</span>
           </div>
         </div>
         <div class="section">
           <h2>Projects</h2>
+          <div class="section_sub">
+            <span class="activity_header"><strong><a class="activity_link" href="https://github.com/AideTechBot/raytracing">No-Name Raytracer</a></strong></span>
+            <span class="activity_header activity_header_sub">C++</span>
+            <span class="date">September - December 2018</span>
+            <ul>
+              <li>A simple raytracer built entirely in C++ that supports different types of materials and lights.</li>
+            </ul>
+          </div>
+          <div class="section_sub">
+            <span class="activity_header"><strong><a class="activity_link" href="https://devpost.com/software/pronto-vision">WiFi Vision</a></strong></span>
+            <span class="activity_header activity_header_sub">Python, matplotlib, Arduino, C++</span>
+            <span class="activity_header activity_header_tag">(Best Hack - Hack the North)</span>
+            <span class="date">September 2017</span>
+            <ul>
+              <li>Robotic arm on a rail 3d printed rail system that uses 6 Arduino ESP8266 WiFi chips to
+              determine signal strength and plot a heatmap of objects behind walls.</li>
+            </ul>
+          </div>
+          <div class="section_sub">
+            <span class="activity_header"><strong><a class="activity_link" href="https://github.com/AideTechBot/tiva-httpd">Tiva Web Server</a></strong></span>
+            <span class="activity_header activity_header_sub">C++, Python, HTML, CSS</span>
+            <span class="date">November 2016</span>
+            <ul>
+              <li>Fully functioning HTTP server for a Tiva C Series microcontroller that has an Orbit Boosterpack.</li>
+            </ul>
+          </div>
+          <div class="section_sub">
+            <span class="activity_header"><strong><a class="activity_link" href="#unreleased">Bluetooth Messaging</a></strong></span>
+            <span class="activity_header activity_header_sub">C#, WPF, XAML, Bluetooth</span>
+            <span class="date">December 2016</span>
+            <ul>
+              <li>Desktop app to let people send or receive SMS on their Bluetooth equipped PC using their phone.</li>
+              <li>Works with almost any Windows laptop and any phone that supports Bluetooth MAP.</li>
+            </ul>
+          </div>
+          <div class="section_sub">
+            <span class="activity_header"><strong><a class="activity_link" href="https://github.com/AideTechBot/VoteCDJ">VoteCDJ</a></strong></span>
+            <span class="activity_header activity_header_sub">C#, PHP, MySQL, Javascript</span>
+            <span class="activity_header activity_header_tag">(Bronze - Canada Wide Science Fair)</span>
+            <span class="date">June 2015 - May 2016</span>
+            <ul>
+              <li>Online portal to allow users to log-in through an online portal and vote using their student ID.</li>
+            </ul>
+          </div>
+          <div class="section_sub">
+            <span class="activity_header"><strong><a class="activity_link" href="https://github.com/AideTechBot/SatTrak">SatTrak</a></strong></span>
+            <span class="activity_header activity_header_sub">C#, WPF, Python</span>
+            <span class="activity_header activity_header_tag">(Bronze - Canada Wide Science Fair)</span>
+            <span class="date">June 2014 - May 2015</span>
+            <ul>
+              <li>Software created to facilitate the tracking and acquisition of satellite downlink from Earth orbit.
+              Specifically made for ham radio operators.</li>
+              <li>Fetches TLE data from an online NORAD database and calculates the position of satellites to
+              move a robotic antennae controlled by a Raspberry Pi.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Recognition</h2>
           <ul>
-            <li>Developing a distributed graph search service for music data (4th Year Design Project)</li>
-            <li>News aggregation system that uses machine learning to select interesting content</li>
-            <li>Developed a distributed P2P file sharing application inspired by BitTorrent (ECE454)</li>
-            <li>Search engine that ranks results based on click-throughs in real time</li>
-            <li><strong>See more at</strong> <a href="http://stephenholiday.com/">StephenHoliday.com</a> and <a href="http://github.com/sholiday">github.com/sholiday</a></li>
+            <li>
+              Winner for best hack at Hack the North 
+              <span class="activity_header activity_header_tag">(1000 participants)</span>
+              <span class="date">September 2017</span>
+            </li>
+            <li>
+              UNB Beaverbrook Scholar $40,000 Recipient
+              <span class="date">May 2016</span>
+            </li>
+            <li>
+              Two time bronze medalist at the Canada-Wide Science Fair 
+              <span class="activity_header activity_header_tag">(600+ participants)</span>
+              <span class="date">May 2015-2016</span></li>
           </ul>
         </div>
       </div>
